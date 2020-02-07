@@ -1,0 +1,154 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+body
+	background-color: aqua
+
+
+
+.elements
+	width: 100%
+	display: flex
+	justify-content: space-between
+	padding: 25px -0px
+	input
+		border: 1px solid #fff
+		border-right: none
+		outline: none
+		padding: 0 0 0 10px
+	button
+		border: none
+		background-color: black
+		color: #fff
+		padding: 0 20px
+		outline: none
+		cursor: pointer
+
+.wrap-search
+	display: flex
+
+
+
+.wrapper
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	.wrap-img
+		width: 24%
+		margin-bottom: 75px
+		height: 266px
+		position: relative
+		// &.active
+		// 	&::before
+		// 		content: ''
+		// 		position: absolute
+		// 		left: 0
+		// 		right: 0
+		// 		top: 0
+		// 		bottom: 0
+		// 		background-color: #000
+		// 		opacity: .4
+		span
+			position: absolute
+			bottom: -60px
+			right: 0
+			left: 0
+			background-color: #000
+			color: #fff
+			min-height: 60px
+			text-align: center
+			display: flex
+			justify-content: center
+			align-items: center
+			padding: 0 30px
+			font-size: 14px
+			i
+				position: absolute
+				right: 15px
+				z-index: 99
+				font-size: 16px
+				cursor: pointer
+		img
+			width: 100%	
+			height: 100%
+
+	.original
+		position: absolute
+		left: 0
+		top: 0
+		right: 0
+		bottom: 0
+		width: 100%
+		display: none
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		z-index: 9
+		&.active
+			display: flex
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			right: 0
+			top: 0
+			bottom: 0
+			background-color: #000
+			opacity: .4
+			z-index: -1
+		a, span
+			color: #fff
+			background-color: transparent
+			text-decoration: none
+		span
+			position: relative
+			height: auto
+			min-height: auto
+			margin-bottom: 5px
+			bottom: 0
+		a
+			background-color: red
+			padding: 10px 20px
+			border-radius: 10px
+			cursor: pointer
+
+
+
+@import "media" // Always at the end

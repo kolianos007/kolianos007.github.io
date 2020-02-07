@@ -1,0 +1,75 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+	.wrapper .wrap-img
+		height: 223px
+
+// ≥992px
++media-breakpoint-down(md)
+
+	.wrapper .wrap-img
+		height: 165px
+		span
+			font-size: 12px
+			padding: 0 20px
+			i
+				right: 10px
+				font-size: 14px
+
+
+
+// ≥768px
++media-breakpoint-down(sm)
+
+	.wrapper .wrap-img
+		width: 48%
+		
+
+
+// ≥576px
++media-breakpoint-down(xs)
+
+	.elements
+		width: 290px
+		margin: 0 auto
+
+	.wrapper 
+		justify-content: center
+		.wrap-img
+			width: 290px
+			height: 290px
+			span
+				i
+					width: 30px
+					line-height: 30px
+
+	.elements
+		flex-direction: column
+		> button
+			margin-top: 10px
+		input
+			width: 100%
+
+	.wrap-search
+		justify-content: space-between
+		display: flex
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
