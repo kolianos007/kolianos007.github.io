@@ -30,7 +30,7 @@
 
 	function getData() {
 		input.value = ''
-		let xhr = $.get(`http://api.giphy.com/v1/gifs/search?&api_key=${apiKey}&limit=8&q=${inputVal}&offset=${random}`);
+		let xhr = $.get(`https://api.giphy.com/v1/gifs/search?&api_key=${apiKey}&limit=8&q=${inputVal}&offset=${random}`);
 		xhr.done(function(response) { 
 			// console.log(response)
 			let gifs = response.data
